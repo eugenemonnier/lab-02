@@ -49,11 +49,12 @@ $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' })
 
 function showKeywordPic() {
   $('section').hide();
-  let selectedKeyword = $('#keyWords').val();
-  allHorns.forEach((element, index) => {
-    if (allHorns[index].keyword === selectedKeyword) {
-      $('.' + selectedKeyword).show();
-    }
-  });
+  let selectedKeyword = $(this).val();
+  if (selectedKeyword === 'default') {
+    $('section').show();
+    $('#photo-template').hide();
+  } else {
+    $('.' + selectedKeyword).show();
+  }
 }
 
