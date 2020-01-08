@@ -18,10 +18,8 @@ function Animal(animalObj) {
 }
 
 function renderOptions() {
-  // debugger;
   dropDownArray.forEach(element => {
     const $newOption = $(`<option>${element}</option>`);
-    // $newOption.text(element);
     $('select').append($newOption);
   });
 }
@@ -50,7 +48,6 @@ $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' })
   });
 
 function showKeywordPic() {
-  // debugger;
   $('section').hide();
   let selectedKeyword = $('#keyWords').val();
   allHorns.forEach((element, index) => {
