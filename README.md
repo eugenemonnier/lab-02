@@ -90,12 +90,12 @@ As a user, I want a simple, clean looking UI so that my photo gallery clearly di
 
   ### Time Estimate
 
-- Number and name of feature: 1 hour
+- Number and name of feature: 
 
-- Estimate of time needed to complete: 
+- Estimate of time needed to complete: 1 hour
 
-- Start time: 
+- Start time: 12:50
 
-- Finish time: 
+- Finish time: 1:20
 
-- Actual time needed to complete: 
+- Actual time needed to complete: 30 minutes

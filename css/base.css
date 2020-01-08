@@ -1,0 +1,20 @@
+header {
+  font-family: 'Nothing You Could Do', cursive;
+  color: green;
+  text-align: center;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+}
+main {
+  overflow: auto;
+}
+section {
+  width: 400px;
+  overflow: hidden;
+}
+body {
+  margin: 0 auto;
+}
