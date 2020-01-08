@@ -57,15 +57,15 @@ As a user, I want to be able to filter the images so that I can view only images
 
   ### Time Estimate
 
-- Number and name of feature: 45 minutes to 1 hour
+- Number and name of feature: 
 
-- Estimate of time needed to complete: 
+- Estimate of time needed to complete: 45 minutes to 1 hour
 
-- Start time: 
+- Start time: 10:45
 
-- Finish time: 
+- Finish time: 12:05
 
-- Actual time needed to complete: 
+- Actual time needed to complete: 1 hour 20 min
 # Feature #3: Style the application
 
 ### Why are we implementing this feature?
