@@ -24,13 +24,13 @@ As a user, I want to view the images on the page so that I can browse the photo 
 
   ### Time Estimate
 
-- Estimate of time needed to complete: 
+- Estimate of time needed to complete: 30-45 minutes
 
-- Start time: 
+- Start time: 9:25am
 
-- Finish time: 
+- Finish time: 10:40
 
-- Actual time needed to complete: 
+- Actual time needed to complete: 1hr 15 min
 
 
 ## Feature #2: Filter images
@@ -57,7 +57,7 @@ As a user, I want to be able to filter the images so that I can view only images
 
   ### Time Estimate
 
-- Number and name of feature: 
+- Number and name of feature: 45 minutes to 1 hour
 
 - Estimate of time needed to complete: 
 
@@ -90,7 +90,7 @@ As a user, I want a simple, clean looking UI so that my photo gallery clearly di
 
   ### Time Estimate
 
-- Number and name of feature: 
+- Number and name of feature: 1 hour
 
 - Estimate of time needed to complete: 
 
