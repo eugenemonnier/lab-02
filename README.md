@@ -151,3 +151,26 @@ As a user, I want all of the images to be displayed in a consistent manner, so t
 - Finish time: 11:10
 
 - Actual time needed to complete: 55 mins
+
+# Feature 3: Styling with Flexbox
+ 
+### Why are we implementing this feature?
+As a user, I want a simple, clean looking UI so that my photo gallery clearly displays the images.
+
+### What are we going to implement?
+ - Given that a user opens the application in the browser
+ - When the user navigates to the home page
+ - Then the images should be displayed in columns, as screen width allows
+
+### How are we implementing it?
+ - Refactor your CSS to use Flexbox instead of floats. You are welcome to use a combination of floats and Flexbox, as you see fit.
+
+ ### Time Estimate
+
+- Estimate of time needed to complete: 35 minutes
+
+- Start time: 11:15
+
+- Finish time: 11:35
+
+- Actual time needed to complete: 20 mins

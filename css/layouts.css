@@ -1,7 +1,15 @@
-section {
-  float: left;
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+}
+section{
   margin: 30px;
   height: 540px;
+  width:400px;
+
 }
 #photo-template {
   display: none;
@@ -10,10 +18,7 @@ img {
   height: 400px;
   width: 400px;
 }
-section {
-  width: 400px;
-  overflow: hidden;
-}
+
 div{
   display: flex;
   justify-content: center;
@@ -41,4 +46,7 @@ font-family: Helvetica, sans-serif;
 select{
   height: 25px ;
 }
+/* main{
+  display: flex;
 
+} */
