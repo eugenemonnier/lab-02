@@ -118,12 +118,12 @@ As a user, I want to have the ability to view additional images so that my view 
 
 ### Time Estimate
 
-- Number and name of feature: 
+- Number and name of feature: pagination
 
 - Estimate of time needed to complete: 45 minutes
 
 - Start time: 9:15
 
-- Finish time: 
+- Finish time: 10:10
 
-- Actual time needed to complete: 
+- Actual time needed to complete: 55min
