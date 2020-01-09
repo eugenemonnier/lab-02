@@ -17,16 +17,18 @@
   <header>
     <h1>The Gallery of Horns</h1>
     <div>
+      <button id="sortHorn" type="button">Sort by Horns</button>
       <a href="index.html" class="button"><</a>
       <select id="keyWords">
         <option value="default">Filter by Keyword</option>
       </select>
       <a href="index.html" class="button">></a>
+      <button id="sortTitle" type="button">Sort by Title</button>
     </div>
   </header>
   <main>
     <script id="entry-template" type="text/x-handlebars-template">
-      <section class="{{keyword}}">
+      <section class="{{keyword}} added">
         <h2>{{title}}</h2>
         <img src="{{imageUrl}}" alt="{{title}}">
         <p>{{description}}</p>

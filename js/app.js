@@ -1,18 +1,18 @@
 'use strict';
 // event listener for dropdown
 $('#keyWords').on('change', showKeywordPic);
-
 // global arrays
 let dropDownArray = [];
 let allHorns = [];
 
+
 // constructor to populate allHorns array
 function Animal(animalObj) {
-  this.imageUrl = animalObj.image_url;
   this.title = animalObj.title;
   this.description = animalObj.description;
   this.keyword = animalObj.keyword;
   this.horns = animalObj.horns;
+  this.imageUrl = animalObj.image_url;
   allHorns.push(this);
   if (!dropDownArray.includes(animalObj.keyword)) {
     dropDownArray.push(animalObj.keyword);
@@ -70,3 +70,49 @@ if (window.location.pathname.endsWith('index.html')) {
     });
 
 }
+
+const hornAsc = (arr) => {
+  arr.sort((a, b) => {return a.horns - b.horns })
+  // allHorns.render();
+  $('.added').remove();
+  allHorns.forEach(element => {
+  let renderedHorns = element.render();
+  $('main').append(renderedHorns);
+  })
+};
+
+const hornDsc = (arr) => {
+  arr.sort((a, b) => {return b.horns - a.horns })
+  // allHorns.render();
+  $('.added').remove();
+  allHorns.forEach(element => {
+    let renderedHorns = element.render();
+    $('main').append(renderedHorns);
+    })
+  };
+  
+
+const titleAsc = (arr) => {
+  arr.sort((a, b) => {return a.title > b.title ? 1: a.title < b.title ? -1: 0;})
+  // allHorns.render();
+  $('.added').remove();
+  allHorns.forEach(element => {
+    let renderedHorns = element.render();
+    $('main').append(renderedHorns);
+    })
+  };
+  
+const titleDsc = (arr) => {
+  arr.sort((a, b) => {return a.title > b.title ? -1: a.title < b.title ? 1: 0;})
+  // allHorns.render();
+  $('.added').remove();
+  allHorns.forEach(element => {
+    let renderedHorns = element.render();
+    $('main').append(renderedHorns);
+    })
+  };
+  
+$('sortHorn').on('click', hornAsc);
+$('sortTitle').on(titleAsc, titleDsc);
+
+
