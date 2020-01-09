@@ -1,10 +1,12 @@
 'use strict';
-
+// event listener for dropdown
 $('#keyWords').on('change', showKeywordPic);
 
+// global arrays
 let dropDownArray = [];
-
 let allHorns = [];
+
+// constructor to populate allHorns array
 function Animal(animalObj) {
   this.imageUrl = animalObj.image_url;
   this.title = animalObj.title;
@@ -17,6 +19,7 @@ function Animal(animalObj) {
   }
 }
 
+// function to render dropdown options
 function renderOptions() {
   dropDownArray.forEach(element => {
     const $newOption = $(`<option>${element}</option>`);
@@ -24,21 +27,14 @@ function renderOptions() {
   });
 }
 
+// handlebars function to render image sections
 Animal.prototype.render = function () {
-  const myTemplate = $('#photo-template').html();
-  const $newSection = $('<section></section>');
-
-  $newSection.html(myTemplate);
-  $newSection.find('h2').text(this.title);
-  $newSection.find('img').attr('src', this.imageUrl);
-  $newSection.find('img').attr('alt', this.title);
-  $newSection.find('p').text(this.description);
-  $newSection.attr('class', this.keyword);
-
-  $('main').append($newSection);
+  let source = $('#entry-template').html();
+  let template = Handlebars.compile(source);
+  return template(this);
 };
 
-
+// function to show only selected images from dropdown
 function showKeywordPic() {
   $('section').hide();
   let selectedKeyword = $(this).val();
@@ -50,12 +46,14 @@ function showKeywordPic() {
   }
 }
 
+// checks to see which page is in browser and gets selected JSON
 if (window.location.pathname.endsWith('index.html')) {
   $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' })
     .then(data => {
       data.forEach(element => {
         let horny = new Animal(element);
-        horny.render();
+        let renderedHorns = horny.render();
+        $('main').append(renderedHorns);
       });
       renderOptions();
     });
@@ -65,7 +63,8 @@ if (window.location.pathname.endsWith('index.html')) {
     .then(data => {
       data.forEach(element => {
         let horny = new Animal(element);
-        horny.render();
+        let renderedHorns = horny.render();
+        $('main').append(renderedHorns);
       });
       renderOptions();
     });

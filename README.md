@@ -101,7 +101,7 @@ As a user, I want a simple, clean looking UI so that my photo gallery clearly di
 
 - Actual time needed to complete: 30 minutes
 
-# Feature 1: Pagination
+# Feature 4: Pagination
 
 ### Why are we implementing this feature?
 
@@ -118,8 +118,6 @@ As a user, I want to have the ability to view additional images so that my view 
 
 ### Time Estimate
 
-- Number and name of feature: pagination
-
 - Estimate of time needed to complete: 45 minutes
 
 - Start time: 9:15
@@ -127,3 +125,29 @@ As a user, I want to have the ability to view additional images so that my view 
 - Finish time: 10:10
 
 - Actual time needed to complete: 55min
+
+# Feature 2: Templating
+
+### Why are we implementing this feature?
+
+As a user, I want all of the images to be displayed in a consistent manner, so that it is easy to scan the collection of images.
+
+### What are we going to implement?
+
+ - Given that a user opens the application in the browser
+ - When the images are displayed on the screen
+ - Then each image should be rendered according to a template
+
+### How are we implementing it?
+ - Create the appropriate Handlebars template in your HTML with the same <h2>, <img>, and <p> elements as the jQuery template from the prior lab.
+ - Refactor the method that renders your images to use Handlebars instead of making a copy with jQuery.
+
+ ### Time Estimate
+
+- Estimate of time needed to complete: 35 minutes
+
+- Start time: 10:15
+
+- Finish time: 
+
+- Actual time needed to complete: 
