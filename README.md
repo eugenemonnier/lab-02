@@ -174,3 +174,27 @@ As a user, I want a simple, clean looking UI so that my photo gallery clearly di
 - Finish time: 11:35
 
 - Actual time needed to complete: 20 mins
+
+# Feature 4: Sort the images
+
+### Why are we implementing this feature?
+As a user, I want to be able to sort the images so that there is an order to their rendering.
+
+### What are we going to implement?
+ - Given that a user is presented with sort options
+ - When the user clicks on one option
+ - Then the images should be sorted accordingly
+
+### How are we implementing it?
+ - Add the ability for the user to sort the images by either title or by number of horns.
+ - Sort the images by one of the properties on page load. This should also apply to the second page of images.
+
+ ### Time Estimate
+
+- Estimate of time needed to complete: 1 hour
+
+- Start time: 11:40
+
+- Finish time: 
+
+- Actual time needed to complete: 
