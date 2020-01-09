@@ -71,49 +71,49 @@ if (window.location.pathname.endsWith('index.html')) {
 
 }
 
-const hornAsc = (arr) => {
-  arr.sort((a, b) => {return a.horns - b.horns })
-  // allHorns.render();
+const hornAsc = function() {
+  allHorns.sort((a, b) => {return a.horns - b.horns; });
   $('.added').remove();
   allHorns.forEach(element => {
-  let renderedHorns = element.render();
-  $('main').append(renderedHorns);
-  })
+    let renderedHorns = element.render();
+    $('main').append(renderedHorns);
+  });
 };
 
-const hornDsc = (arr) => {
-  arr.sort((a, b) => {return b.horns - a.horns })
+const hornDsc = function() {
+  allHorns.sort((a, b) => {return b.horns - a.horns; });
   // allHorns.render();
   $('.added').remove();
   allHorns.forEach(element => {
     let renderedHorns = element.render();
     $('main').append(renderedHorns);
-    })
-  };
-  
+  });
+};
 
-const titleAsc = (arr) => {
-  arr.sort((a, b) => {return a.title > b.title ? 1: a.title < b.title ? -1: 0;})
+
+const titleAsc = function() {
+  allHorns.sort((a, b) => {return a.title > b.title ? 1: a.title < b.title ? -1: 0;});
   // allHorns.render();
   $('.added').remove();
   allHorns.forEach(element => {
     let renderedHorns = element.render();
     $('main').append(renderedHorns);
-    })
-  };
-  
-const titleDsc = (arr) => {
-  arr.sort((a, b) => {return a.title > b.title ? -1: a.title < b.title ? 1: 0;})
+  });
+};
+
+const titleDsc = function() {
+  allHorns.sort((a, b) => {return a.title > b.title ? -1: a.title < b.title ? 1: 0;});
   // allHorns.render();
   $('.added').remove();
   allHorns.forEach(element => {
     let renderedHorns = element.render();
     $('main').append(renderedHorns);
-    })
-  };
-  
-$('sortHorn').on('click', hornAsc);
-$('sortTitle').on(titleAsc, titleDsc);
+  });
+};
 
-.
+$('#sortHorn').on('click', hornAsc);
+$('#sortTitle').on('click', titleAsc);
 
+
+// $('#sortHorn').on('toggle', hornAsc, hornDsc);
+// $('#sortTitle').toggle(titleAsc, titleDsc);
