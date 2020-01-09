@@ -38,14 +38,6 @@ Animal.prototype.render = function () {
   $('main').append($newSection);
 };
 
-$.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' })
-  .then(data => {
-    data.forEach(element => {
-      let horny = new Animal(element);
-      horny.render();
-    });
-    renderOptions();
-  });
 
 function showKeywordPic() {
   $('section').hide();
@@ -56,4 +48,26 @@ function showKeywordPic() {
   } else {
     $('.' + selectedKeyword).show();
   }
+}
+
+if (window.location.pathname.endsWith('index.html')) {
+  $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' })
+    .then(data => {
+      data.forEach(element => {
+        let horny = new Animal(element);
+        horny.render();
+      });
+      renderOptions();
+    });
+
+} else if (window.location.pathname.endsWith('index2.html')) {
+  $.ajax('data/page-2.json', { method: 'GET', dataType: 'JSON' })
+    .then(data => {
+      data.forEach(element => {
+        let horny = new Animal(element);
+        horny.render();
+      });
+      renderOptions();
+    });
+
 }
