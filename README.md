@@ -148,6 +148,6 @@ As a user, I want all of the images to be displayed in a consistent manner, so t
 
 - Start time: 10:15
 
-- Finish time: 
+- Finish time: 11:10
 
-- Actual time needed to complete: 
+- Actual time needed to complete: 55 mins
