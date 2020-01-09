@@ -115,4 +115,5 @@ const titleDsc = (arr) => {
 $('sortHorn').on('click', hornAsc);
 $('sortTitle').on(titleAsc, titleDsc);
 
+.
 
