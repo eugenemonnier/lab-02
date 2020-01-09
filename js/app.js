@@ -57,4 +57,3 @@ function showKeywordPic() {
     $('.' + selectedKeyword).show();
   }
 }
-
