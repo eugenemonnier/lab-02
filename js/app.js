@@ -4,6 +4,9 @@ $('#keyWords').on('change', showKeywordPic);
 // global arrays
 let dropDownArray = [];
 let allHorns = [];
+let hornClick = 0;
+let titleClick = 0;
+
 
 
 // constructor to populate allHorns array
@@ -111,9 +114,26 @@ const titleDsc = function() {
   });
 };
 
-$('#sortHorn').on('click', hornAsc);
+// $('#sortHorn').on('click', hornAsc);
 $('#sortTitle').on('click', titleAsc);
 
+const hornToggle = function() {
+  hornClick += 1;
+  if (hornClick % 2 === 0) {
+    hornAsc();
+  } else {
+    hornDsc();
+  }
+};
 
-// $('#sortHorn').on('toggle', hornAsc, hornDsc);
-// $('#sortTitle').toggle(titleAsc, titleDsc);
+const titleToggle = function() {
+  hornClick += 1;
+  if (hornClick % 2 === 0) {
+    titleAsc();
+  } else {
+    titleDsc();
+  }
+};
+
+$('#sortHorn').on('click', hornToggle);
+$('#sortTitle').on('click', titleToggle);
