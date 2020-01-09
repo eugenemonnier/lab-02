@@ -7,3 +7,11 @@ section {
 #photo-template {
   display: none;
 }
+img {
+  height: 400px;
+  width: 400px;
+}
+section {
+  width: 400px;
+  overflow: hidden;
+}
